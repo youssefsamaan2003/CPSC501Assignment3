@@ -51,27 +51,59 @@ public class ObjectCreator {
     }
 
     private static SimpleObject createSimpleObject() {
-        // Prompt the user to enter values for the fields of SimpleObject
-        // Create and return a SimpleObject with the entered values
+        System.out.println("Creating a SimpleObject...");
+        System.out.print("Enter an integer value: ");
+        int intValue = scanner.nextInt();
+        System.out.print("Enter a double value: ");
+        double doubleValue = scanner.nextDouble();
+        System.out.print("Enter a boolean value: ");
+        boolean booleanValue = scanner.nextBoolean();
+        return new SimpleObject(intValue, doubleValue, booleanValue);
     }
+
 
     private static ObjectWithReferences createObjectWithReferences() {
-        // Prompt the user to enter values for the fields of ObjectWithReferences
-        // Create and return an ObjectWithReferences with the entered values
+        System.out.println("Creating an ObjectWithReferences...");
+        SimpleObject simpleObject = createSimpleObject();
+        ObjectWithPrimitiveArray objectWithPrimitiveArray = createObjectWithPrimitiveArray();
+        return new ObjectWithReferences(simpleObject, objectWithPrimitiveArray);
     }
+
 
     private static ObjectWithPrimitiveArray createObjectWithPrimitiveArray() {
-        // Prompt the user to enter values for the fields of ObjectWithPrimitiveArray
-        // Create and return an ObjectWithPrimitiveArray with the entered values
+        System.out.println("Creating an ObjectWithPrimitiveArray...");
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+        for (int i = 0; i < size; i++) {
+            System.out.print("Enter value for element " + i + ": ");
+            array[i] = scanner.nextInt();
+        }
+        return new ObjectWithPrimitiveArray(array);
     }
+
 
     private static ObjectWithObjectArray createObjectWithObjectArray() {
-        // Prompt the user to enter values for the fields of ObjectWithObjectArray
-        // Create and return an ObjectWithObjectArray with the entered values
+        System.out.println("Creating an ObjectWithObjectArray...");
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        SimpleObject[] array = new SimpleObject[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = createSimpleObject();
+        }
+        return new ObjectWithObjectArray(array);
     }
 
+
     private static ObjectWithCollection createObjectWithCollection() {
-        // Prompt the user to enter values for the fields of ObjectWithCollection
-        // Create and return an ObjectWithCollection with the entered values
+        System.out.println("Creating an ObjectWithCollection...");
+        System.out.print("Enter the number of elements in the collection: ");
+        int size = scanner.nextInt();
+        List<SimpleObject> list = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(createSimpleObject());
+        }
+        return new ObjectWithCollection(list);
     }
+
 }
