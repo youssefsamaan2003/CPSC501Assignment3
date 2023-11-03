@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send.">
-      <change afterPath="$PROJECT_DIR$/src/ObjectVisualizer.java" afterDir="false" />
+    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection.">
+      <change afterPath="$PROJECT_DIR$/src/SerializerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPSC501Assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CPSC501Assignment3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectWithCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectWithPrimitiveArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithPrimitiveArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectWithReferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithReferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -38,15 +37,58 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "create.test.in.the.same.root": "true",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SerializationTest">
+    <configuration name="SerializationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CPSC501Assignment3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SerializationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SerializationTest,testSerializeSimpleObject and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CPSC501Assignment3" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="SerializationTest,testSerializeSimpleObject" />
+        <pattern testClass="SerializationTest,testDeserializeSimpleObject" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SerializationTest" />
+        <item itemvalue="JUnit.SerializationTest,testSerializeSimpleObject and 1 more" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699031966009</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection.">
+      <created>1699036816476</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699036816476</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +160,7 @@
     <MESSAGE value="set up the object creator and object with collection. none of the functions in object cereator are done yet, will work on that now" />
     <MESSAGE value="completed serializer, sender, receiver, and deserializer" />
     <MESSAGE value="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send." />
-    <option name="LAST_COMMIT_MESSAGE" value="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send." />
+    <MESSAGE value="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection." />
+    <option name="LAST_COMMIT_MESSAGE" value="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection." />
   </component>
 </project>

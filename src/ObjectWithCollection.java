@@ -8,4 +8,12 @@ public class ObjectWithCollection {
     public ObjectWithCollection(List<SimpleObject> simpleObjectList) {
         this.simpleObjectList = simpleObjectList;
     }
+
+    public List<SimpleObject> getSimpleObjectList() {
+        return simpleObjectList;
+    }
+
+    public void setSimpleObjectList(List<SimpleObject> simpleObjectList) {
+        this.simpleObjectList = simpleObjectList;
+    }
 }

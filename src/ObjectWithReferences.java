@@ -9,4 +9,12 @@ public class ObjectWithReferences {
         this.objectWithPrimitiveArray = objectWithPrimitiveArray;
 
     }
+
+    public SimpleObject getSimpleObject() {
+        return simpleObject;
+    }
+
+    public void setSimpleObject(SimpleObject simpleObject) {
+        this.simpleObject = simpleObject;
+    }
 }

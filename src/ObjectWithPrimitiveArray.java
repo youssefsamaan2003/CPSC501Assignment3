@@ -6,5 +6,13 @@ public class ObjectWithPrimitiveArray {
     public ObjectWithPrimitiveArray(int[] intArray){
         this.intArray = intArray;
     }
+
+    public int[] getIntArray() {
+        return intArray;
+    }
+
+    public void setIntArray(int[] intArray) {
+        this.intArray = intArray;
+    }
 }
 

@@ -10,4 +10,17 @@ public class SimpleObject {
         this.doubleValue = doubleValue;
         this.booleanValue = booleanValue;
     }
+
+
+    public int getIntValue() {
+        return intValue;
+    }
+
+    public double getDoubleValue() {
+        return doubleValue;
+    }
+
+    public boolean isBooleanValue() {
+        return booleanValue;
+    }
 }
