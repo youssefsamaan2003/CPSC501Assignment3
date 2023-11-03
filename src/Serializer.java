@@ -16,7 +16,8 @@ public class Serializer {
         return document;
     }
 
-    private void serializeObject(Object obj, Element parentElement) throws IllegalAccessException, InaccessibleObjectException {
+    
+    private void serializeObject(Object obj, Element parentElement) throws IllegalAccessException {
         // Check if object is already serialized
         if (objectMap.containsKey(obj)) {
             parentElement.addContent(new Element("reference").setText(objectMap.get(obj)));

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="using the inspector for assignment 2 for visualization">
+    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="trying to figure out printing the thing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Inspector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inspector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectWithObjectArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithObjectArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectWithReferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithReferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SerializerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SerializerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699043525204</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="trying to figure out printing the thing">
+      <created>1699046404019</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699046404019</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +188,7 @@
     <MESSAGE value="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection." />
     <MESSAGE value="added tests" />
     <MESSAGE value="using the inspector for assignment 2 for visualization" />
-    <option name="LAST_COMMIT_MESSAGE" value="using the inspector for assignment 2 for visualization" />
+    <MESSAGE value="trying to figure out printing the thing" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to figure out printing the thing" />
   </component>
 </project>

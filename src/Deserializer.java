@@ -2,6 +2,7 @@ import org.jdom2.Document;
 import org.jdom2.Element;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.lang.reflect.Array;

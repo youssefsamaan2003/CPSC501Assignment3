@@ -59,9 +59,12 @@ public class ObjectCreator {
 
     private static ObjectWithReferences createObjectWithReferences() {
         System.out.println("Creating an ObjectWithReferences...");
-        SimpleObject simpleObject = createSimpleObject();
-        ObjectWithPrimitiveArray objectWithPrimitiveArray = createObjectWithPrimitiveArray();
-        return new ObjectWithReferences(simpleObject, objectWithPrimitiveArray);
+        SimpleObject simpleObject = new SimpleObject();
+        ObjectWithReferences objectWithReferences = new ObjectWithReferences();
+
+        objectWithReferences.simpleObject = (SimpleObject) createSimpleObject();
+
+        return objectWithReferences;
     }
 
 

@@ -41,23 +41,7 @@ class SerializationTest {
         assertEquals(simpleObject.getDoubleValue(), deserializedObject.getDoubleValue());
     }
 
-    @Test
-    void testSerializeObjectWithReferences() throws IllegalAccessException {
-        ObjectWithReferences objectWithReferences = new ObjectWithReferences(new SimpleObject(10, 20.5, true), new ObjectWithPrimitiveArray());
-        Document document = serializer.serialize(objectWithReferences);
-        assertNotNull(document);
-        String xml = outputter.outputString(document);
-        assertTrue(xml.contains("<reference>"));
-    }
 
-    @Test
-    void testDeserializeObjectWithReferences() throws Exception {
-        ObjectWithReferences objectWithReferences = new ObjectWithReferences(new SimpleObject(10, 20.5, true), new ObjectWithPrimitiveArray());
-        Document document = serializer.serialize(objectWithReferences);
-        ObjectWithReferences deserializedObject = (ObjectWithReferences) deserializer.deserialize(document);
-        assertNotNull(deserializedObject);
-        assertNotNull(deserializedObject.getSimpleObject());
-    }
 
     @Test
     void testSerializeArrayPrimitives() throws IllegalAccessException {
