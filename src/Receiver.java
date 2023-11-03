@@ -30,6 +30,7 @@ public class Receiver {
 
             ObjectVisualizer visualizer = new ObjectVisualizer();
             visualizer.visualize(deserializedObject);
+            Inspector.inspect(deserializedObject, false);
 
 
             // Display the deserialized object

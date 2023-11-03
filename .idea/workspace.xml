@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection.">
-      <change afterPath="$PROJECT_DIR$/src/SerializerTest.java" afterDir="false" />
+    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="added tests">
+      <change afterPath="$PROJECT_DIR$/src/Inspector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPSC501Assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CPSC501Assignment3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectWithCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectWithPrimitiveArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithPrimitiveArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectWithReferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithReferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +53,14 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SerializationTest">
+  <component name="RunManager">
     <configuration name="SerializationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CPSC501Assignment3" />
       <option name="PACKAGE_NAME" value="" />
@@ -140,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699036816476</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added tests">
+      <created>1699039549183</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699039549183</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +167,7 @@
     <MESSAGE value="completed serializer, sender, receiver, and deserializer" />
     <MESSAGE value="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send." />
     <MESSAGE value="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection." />
-    <option name="LAST_COMMIT_MESSAGE" value="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection." />
+    <MESSAGE value="added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
   </component>
 </project>
