@@ -31,12 +31,6 @@ public class Sender {
             out.close();
             socket.close();
 
-            // Convert the JDOM document to a string
-
-
-            // Send the serialized object to the Receiver
-
-
             System.out.println("Object sent successfully!");
         } catch (Exception e) {
             e.printStackTrace();

@@ -28,9 +28,13 @@ public class Receiver {
             Deserializer deserializer = new Deserializer();
             Object deserializedObject = deserializer.deserialize(document);
 
+            ObjectVisualizer visualizer = new ObjectVisualizer();
+            visualizer.visualize(deserializedObject);
+
+
             // Display the deserialized object
             System.out.println("Deserialized object: " + deserializedObject);
-
+            System.out.println("Inspection Over.");
             // Close the connections
             in.close();
             socket.close();

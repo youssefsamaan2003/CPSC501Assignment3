@@ -20,27 +20,20 @@ public class ObjectCreator {
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
 
-            switch (choice) {
-                case 1:
-                    createdObjects.add(createSimpleObject());
-                    break;
-                case 2:
-                    createdObjects.add(createObjectWithReferences());
-                    break;
-                case 3:
-                    createdObjects.add(createObjectWithPrimitiveArray());
-                    break;
-                case 4:
-                    createdObjects.add(createObjectWithObjectArray());
-                    break;
-                case 5:
-                    createdObjects.add(createObjectWithCollection());
-                    break;
-                case 6:
-                    running = false;
-                    break;
-                default:
-                    System.out.println("Invalid choice. Please enter a number between 1 and 6.");
+            if (choice == 1){
+                createdObjects.add(createSimpleObject());
+            } else if (choice == 2){
+                createdObjects.add(createObjectWithReferences());
+            } else if (choice == 3){
+                createdObjects.add(createObjectWithPrimitiveArray());
+            } else if (choice == 4){
+                createdObjects.add(createObjectWithObjectArray());
+            } else if (choice == 5){
+                createdObjects.add(createObjectWithCollection());
+            } else if (choice == 6){
+                running = false;
+            } else {
+                System.out.println("Invalid choice. Please enter a number between 1 and 6.");
             }
         }
 

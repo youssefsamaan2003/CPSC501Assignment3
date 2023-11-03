@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="completed serializer, sender, receiver, and deserializer">
+    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send.">
+      <change afterPath="$PROJECT_DIR$/src/ObjectVisualizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectWithCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectWithPrimitiveArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithPrimitiveArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectWithReferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithReferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698959979552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send.">
+      <created>1699031966009</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699031966009</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +110,7 @@
     <MESSAGE value="just set up the object classes" />
     <MESSAGE value="set up the object creator and object with collection. none of the functions in object cereator are done yet, will work on that now" />
     <MESSAGE value="completed serializer, sender, receiver, and deserializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed serializer, sender, receiver, and deserializer" />
+    <MESSAGE value="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send." />
+    <option name="LAST_COMMIT_MESSAGE" value="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send." />
   </component>
 </project>

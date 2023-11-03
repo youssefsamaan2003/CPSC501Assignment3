@@ -3,6 +3,7 @@ public class SimpleObject {
     private double doubleValue;
     private boolean booleanValue;
 
+    public SimpleObject(){}
     // Constructors, getters, and setters
     public SimpleObject(int intValue, double doubleValue, boolean booleanValue){
         this.intValue = intValue;
