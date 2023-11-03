@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class ObjectCreator {
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public ArrayList<Object> createObject() {
         boolean running = true;
-        List<Object> createdObjects = new ArrayList<>();
+        ArrayList<Object> createdObjects = new ArrayList<>();
 
         while (running) {
             System.out.println("Choose an option:");
@@ -48,6 +48,8 @@ public class ObjectCreator {
         for (Object obj : createdObjects) {
             System.out.println(obj);
         }
+
+        return createdObjects;
     }
 
     private static SimpleObject createSimpleObject() {

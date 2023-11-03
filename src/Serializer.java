@@ -1,5 +1,7 @@
 import org.jdom2.Document;
 import org.jdom2.Element;
+
+import java.lang.reflect.InaccessibleObjectException;
 import java.util.IdentityHashMap;
 
 public class Serializer {
@@ -12,7 +14,7 @@ public class Serializer {
         return document;
     }
 
-    private void serializeObject(Object obj, Element parentElement) throws IllegalAccessException {
+    private void serializeObject(Object obj, Element parentElement) throws IllegalAccessException, InaccessibleObjectException {
         // Check if object is already serialized
         if (objectMap.containsKey(obj)) {
             parentElement.addContent(new Element("reference").setText(objectMap.get(obj)));
@@ -32,6 +34,7 @@ public class Serializer {
         // Serialize fields of the object
         for (java.lang.reflect.Field field : obj.getClass().getDeclaredFields()) {
             field.setAccessible(true);
+
             Element fieldElement = new Element("field");
             fieldElement.setAttribute("name", field.getName());
             fieldElement.setAttribute("declaringclass", field.getDeclaringClass().getName());
