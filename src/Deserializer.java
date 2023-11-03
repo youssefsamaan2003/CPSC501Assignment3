@@ -25,7 +25,7 @@ public class Deserializer {
                 int length = Integer.parseInt(objectElement.getAttributeValue("length"));
                 instance = Array.newInstance(clazz.getComponentType(), length);
             } else {
-                instance = clazz.getDeclaredConstructor().newInstance();
+                instance = clazz.getConstructor().newInstance();
             }
             String id = objectElement.getAttributeValue("id");
             objectMap.put(id, instance);

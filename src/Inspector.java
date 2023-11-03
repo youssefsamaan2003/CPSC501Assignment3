@@ -56,6 +56,28 @@ public class Inspector {
                 System.out.println("Type: " + field.getType().getName());
                 System.out.println("Modifiers: " + Modifier.toString(field.getModifiers()));
 
+                Class<?> fieldType = field.getType();
+                if (fieldType.isArray()) {
+                    System.out.println("Field '" + field.getName() + "' is an Array");
+                    System.out.println("Array Component Type: " + fieldType.getComponentType().getName());
+                    field.setAccessible(true);
+                    try {
+                        Object fieldValue = field.get(obj);
+                        if (fieldValue != null) {
+                            System.out.println("Array Length: " + Array.getLength(fieldValue));
+                            System.out.println("Array Contents:");
+                            for (int i = 0; i < Array.getLength(fieldValue); i++) {
+                                Object arrayElement = Array.get(fieldValue, i);
+                                System.out.println("Element " + i + ":");
+                                inspect(arrayElement, recursive);
+                            }
+                        } else {
+                            System.out.println("Array is null");
+                        }
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
+                    }
+                }
 
                 if (recursive && !field.getType().isPrimitive()) {
                     try {
@@ -83,6 +105,11 @@ public class Inspector {
             System.out.println("Array Component Type: " + objClass.getComponentType().getName());
             System.out.println("Array Length: " + Array.getLength(obj));
             System.out.println("Array Contents: " + Arrays.toString((Object[]) obj));
+            for (int i = 0; i < Array.getLength(obj); i++) {
+                Object arrayElement = Array.get(obj, i);
+                System.out.println("Element " + i + ":");
+                inspect(arrayElement, recursive);
+            }
         }
 
     }

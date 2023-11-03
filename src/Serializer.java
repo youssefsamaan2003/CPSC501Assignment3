@@ -1,7 +1,9 @@
 import org.jdom2.Document;
 import org.jdom2.Element;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.InaccessibleObjectException;
+import java.lang.reflect.Modifier;
 import java.util.IdentityHashMap;
 
 public class Serializer {
@@ -34,7 +36,14 @@ public class Serializer {
         // Serialize fields of the object
         for (java.lang.reflect.Field field : obj.getClass().getDeclaredFields()) {
             field.setAccessible(true);
+            Field[] fields = obj.getClass().getDeclaredFields();
 
+            for (Field field1 : fields) {
+                // Skip static and final fields
+                if (Modifier.isStatic(field1.getModifiers()) || Modifier.isFinal(field1.getModifiers())) {
+                    continue;
+                }
+            }
             Element fieldElement = new Element("field");
             fieldElement.setAttribute("name", field.getName());
             fieldElement.setAttribute("declaringclass", field.getDeclaringClass().getName());

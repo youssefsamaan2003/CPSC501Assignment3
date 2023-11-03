@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="added tests">
-      <change afterPath="$PROJECT_DIR$/src/Inspector.java" afterDir="false" />
+    <list default="true" id="ab5a0010-893f-4741-b1e7-f123119ad306" name="Changes" comment="using the inspector for assignment 2 for visualization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inspector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inspector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectWithObjectArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectWithObjectArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Serializer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699039549183</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="using the inspector for assignment 2 for visualization">
+      <created>1699043525203</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699043525204</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +177,7 @@
     <MESSAGE value="made it so that i dont just create a simple object, i actually use the object creator class to create multiple objects to send." />
     <MESSAGE value="big moves made, a lot of stuff happened here, mb. So we did a refactoring, got rid of a switch statement, added a visualizer, fixed a lot of other stuff, everything working except collection." />
     <MESSAGE value="added tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
+    <MESSAGE value="using the inspector for assignment 2 for visualization" />
+    <option name="LAST_COMMIT_MESSAGE" value="using the inspector for assignment 2 for visualization" />
   </component>
 </project>
